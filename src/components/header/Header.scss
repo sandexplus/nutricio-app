@@ -1,0 +1,22 @@
+.header{
+    padding: 60px 100px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__user{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__prev{
+        width: 48px;
+        height: 48px;
+        margin-right: 20px;
+    }
+    &__name{
+        font-size: 25px;
+        line-height: 30px;
+        color: #434242;
+    }
+}

@@ -1,0 +1,52 @@
+.table{
+    &__supper-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        margin-top: 55px;
+        font-size: 50px;
+        line-height: 61px;
+        color: #713F10;
+    }
+    &__pdf{
+        margin-top: 55px;
+        font-size: 30px;
+        line-height: 37px;
+        color: #434242;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        & img {
+            margin-left: 15px;    
+        }
+    }
+    &__back{
+        font-size: 23px;
+        line-height: 28px;
+        color: #434242;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        & img {
+            margin-right: 15px;
+        }
+    }
+    &__table{
+        tr {
+            td {
+                border: 1px solid #000;
+                &:first-child{
+                    border: none;
+                }
+            }
+            &:first-child{
+                td {
+                    border-top: none;
+                    border-left: none;
+                }
+            }
+        }
+        
+    }
+}
