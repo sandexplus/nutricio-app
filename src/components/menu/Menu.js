@@ -17,7 +17,7 @@ const Menu = () => {
                         </div>
                         <div className="menu__item">
                             <img src={img2} alt="" className="menu__img" />
-                            <Link to="/" className="menu__link">Методичка</Link>
+                            <Link to="/methodic" className="menu__link">Методичка</Link>
                         </div>
                         <div className="menu__item">
                             <img src={img3} alt="" className="menu__img" />

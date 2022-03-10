@@ -1,16 +1,15 @@
 import Header from "../header/Header";
-import Table from "../table/Table";
 import BackBtn from "../backBtn/BackBtn";
+import Methodic from "../methodic/Methodic";
 
-
-const LoggedTable = () => {
+const LoggedMethodic = () => {
     return (
         <>
             <Header/>
             <BackBtn/>
-            <Table/>
+            <Methodic/>
         </>
     )
 }
 
-export default LoggedTable;
+export default LoggedMethodic;

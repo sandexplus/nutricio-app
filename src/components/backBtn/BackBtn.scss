@@ -1,0 +1,11 @@
+.back{
+    font-size: 23px;
+    line-height: 28px;
+    color: #434242;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    & img {
+        margin-right: 15px;
+    }
+}
