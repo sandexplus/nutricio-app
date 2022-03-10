@@ -12,15 +12,42 @@
         width: 100%;
         height: 100%;
     }
+    &__item{
+        position: relative;
+        transition: .5s all;
+        &:hover{
+            transform: scale(1.03);
+            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            transition: .5 all;
+            .menu__link {
+                transition: .5s all;
+                background-color: #fff;
+                width: 120%;
+                left: -10%;
+            }
+        }
+        &:not(:hover){
+            .menu__link {
+                transition: .5s all;
+                background-color: rgba(255, 255, 255, 0.5);
+                width: 80%;
+                left: 10%;
+            }
+        }
+    }
     &__link{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+        bottom: 25px;
+        left: 10%;
+        width: 80%;
         display: block;
         font-size: 39px;
         line-height: 48px;
         color: #434242;
         text-decoration: none;
-        padding: 20px 90px;
+        padding: 20px 0;
         border: 2px solid #434242;
-        margin-top: 10px;
         text-align: center;
         &:hover{
             text-decoration: underline;
