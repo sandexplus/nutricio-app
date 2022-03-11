@@ -1,7 +1,7 @@
 .login {
-    background-image: url('../../assets/img/background.webp');
+    background-image: url('../../assets/img/background.png');
     background-size: cover;
-    background-position: 0 -200px;
+    background-position: 0 -100px;
     background-repeat: no-repeat;
     min-width: 100vw;
     min-height: 100vh;
@@ -12,13 +12,15 @@
         justify-content: flex-end;
     }
     &__login{
-        padding: 16px 78px;
+        padding: 7px 60px;
         border: 2px solid #FFFFFF;
+        border-radius: 50px;
         font-weight: 500;
-        font-size: 39px;
+        font-size: 27px;
         line-height: 48px;
         color: #FFFFFF;
         text-decoration: none;
+        margin-right: -45px;
         &:hover{
             border: 2px solid #000;
             color: #000;
@@ -29,7 +31,7 @@
         flex-direction: column;
         position: absolute;
         right: -45px;
-        top: 50%;
+        top: 45vh;
         transform: translateY(-50%);
         gap: 50px;
     }
@@ -37,11 +39,5 @@
         &:hover{
             filter: invert(100%);
         }
-    }
-    &__separator{
-        border: 5px solid #FFFFFF;
-        width: 200px;
-        margin: 0 auto;
-        margin-top: 700px;
     }
 }

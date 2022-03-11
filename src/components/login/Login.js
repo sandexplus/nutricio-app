@@ -19,7 +19,6 @@ const Login = () => {
                         <img src={telegram} alt="Telegram" className="login__link-img" />
                     </a>
                 </div>   
-                <div className="login__separator"></div>
             </div>
         </div>
     )

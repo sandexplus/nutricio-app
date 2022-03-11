@@ -8,7 +8,9 @@ const BackBtn = () => {
     return (
         <>
             <div className="container">
-                <Link to='/links' className='back'><img src={arrow} alt="Arrow" /> Назад</Link>
+                <div className="back-container">
+                    <Link to='/links' className='back'><img src={arrow} alt="Arrow" /> Назад</Link>
+                </div>
             </div>
         </>
     )

@@ -1,1 +1,1 @@
-.back{font-size:23px;line-height:28px;color:#434242;text-decoration:none;display:flex;align-items:center}.back img{margin-right:15px}
+.back{font-size:23px;line-height:28px;color:#434242;text-decoration:none;display:flex;align-items:center}.back img{margin-right:15px}.back:hover img{transition:.5s all;transform:translateX(-15px)}.back:not(:hover) img{transition:.5s all;transform:none}

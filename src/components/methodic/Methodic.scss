@@ -9,6 +9,7 @@
         font-size: 50px;
         line-height: 61px;
         color: #713F10;
+        font-weight: 500;
     }
     &__descr{
         font-size: 30px;
@@ -16,6 +17,7 @@
         color: #434242;
         max-width: 690px;
         margin-top: 59px;
+        margin-right: 300px;
     }
     &__item{
         position: relative;
@@ -45,18 +47,19 @@
     &__flex{
         margin-top: 75px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 75px;
     }
     &__data-img{
         display: block;
         margin: 0 auto;
+        width: 70%;
     }
     &__data-descr{
         margin-top: 40px;
         text-align: center;
-        font-size: 38px;
+        font-size: 27px;
         line-height: 120%;
-        text-align: center;
         color: #434242;
     }
 
@@ -64,8 +67,9 @@
         cursor: pointer;
         background-color: #fff;
         border: 2px solid #434242;
-        padding: 20px 60px;
-        font-size: 39px;
+        border-radius: 70px;
+        padding: 20px 40px;
+        font-size: 23px;
         line-height: 48px;
         color: #434242;
         display: flex;
@@ -76,6 +80,7 @@
             text-decoration: underline;
         }
         img {
+            width: 15%;
             margin-left: 15px;
         }
     }

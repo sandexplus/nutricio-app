@@ -11,18 +11,18 @@ const Menu = () => {
             <div className="menu">
                 <div className="container">
                     <div className="menu__container">
-                        <div className="menu__item">
+                        <Link to='/table' className="menu__item">
                             <img src={img1} alt="" className="menu__img" />
-                            <Link to="/table" className="menu__link">Трекеры</Link>
-                        </div>
-                        <div className="menu__item">
+                            <div className="menu__link">Трекеры</div>
+                        </Link>
+                        <Link to='/methodic' className="menu__item">
                             <img src={img2} alt="" className="menu__img" />
-                            <Link to="/methodic" className="menu__link">Методичка</Link>
-                        </div>
-                        <div className="menu__item">
+                            <div className="menu__link">Методичка</div>
+                        </Link>
+                        <Link to='/trainers' className="menu__item">
                             <img src={img3} alt="" className="menu__img" />
-                            <Link to="/" className="menu__link">Тренировки</Link>
-                        </div>
+                            <div className="menu__link">Тренировки</div>
+                        </Link>
                     </div>
                 </div>
             </div>

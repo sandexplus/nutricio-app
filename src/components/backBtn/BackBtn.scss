@@ -8,4 +8,16 @@
     & img {
         margin-right: 15px;
     }
+    &:hover{
+        & img {
+            transition: .5s all;
+            transform: translateX(-15px);
+        }
+    }
+    &:not(:hover){
+        & img {
+            transition: .5s all;
+            transform: none;
+        }
+    }
 }
