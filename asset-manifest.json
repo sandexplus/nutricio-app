@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/nutricio-app/static/css/main.53ef2174.css",
-    "main.js": "/nutricio-app/static/js/main.3056d92c.js",
-    "static/media/background.webp": "/nutricio-app/static/media/background.3d88ae263316f6c918e2.webp",
+    "main.css": "/nutricio-app/static/css/main.0b36ca53.css",
+    "main.js": "/nutricio-app/static/js/main.781bc5db.js",
+    "static/media/background.png": "/nutricio-app/static/media/background.e851705502c3b5982610.png",
     "static/media/menu-img3.jpg": "/nutricio-app/static/media/menu-img3.7f281f1462d09f0abe81.jpg",
     "static/media/menu-img2.jpg": "/nutricio-app/static/media/menu-img2.023e566bd61d56480110.jpg",
     "static/media/menu-img1.jpg": "/nutricio-app/static/media/menu-img1.25f2c538fb1daeeb976b.jpg",
     "static/media/methodic_girl2.jpg": "/nutricio-app/static/media/methodic_girl2.8fcb1b956e3ad22d9724.jpg",
+    "static/media/maneken.svg": "/nutricio-app/static/media/maneken.7ecb9c9f259f994b5659c8238d399141.svg",
     "static/media/methodic_girl1.jpg": "/nutricio-app/static/media/methodic_girl1.086ea9770cde5f9be400.jpg",
     "static/media/methodic_milk.svg": "/nutricio-app/static/media/methodic_milk.bf09fbd983a2caf6e6a0b803b8870dd7.svg",
     "static/media/methodic__fitness.svg": "/nutricio-app/static/media/methodic__fitness.8ec0c6f35c4df5307f8bb6dd70ce8445.svg",
@@ -18,11 +19,11 @@
     "static/media/user-logo.svg": "/nutricio-app/static/media/user-logo.584d45a4f4ba22680124f42715049fbd.svg",
     "static/media/left-arrow.svg": "/nutricio-app/static/media/left-arrow.93ca51693021735be4cdabe322aae4b7.svg",
     "static/media/file_download.svg": "/nutricio-app/static/media/file_download.210e8c781ea9bbc134b9b724f7e65c53.svg",
-    "main.53ef2174.css.map": "/nutricio-app/static/css/main.53ef2174.css.map",
-    "main.3056d92c.js.map": "/nutricio-app/static/js/main.3056d92c.js.map"
+    "main.0b36ca53.css.map": "/nutricio-app/static/css/main.0b36ca53.css.map",
+    "main.781bc5db.js.map": "/nutricio-app/static/js/main.781bc5db.js.map"
   },
   "entrypoints": [
-    "static/css/main.53ef2174.css",
-    "static/js/main.3056d92c.js"
+    "static/css/main.0b36ca53.css",
+    "static/js/main.781bc5db.js"
   ]
 }
