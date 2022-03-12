@@ -1,3 +1,6 @@
+import { useState, useCallback } from 'react';
+import Carousel from 'react-elastic-carousel'
+
 import './Table.scss';
 import download from '../../assets/img/file_download.svg';
 import maneken from '../../assets/img/maneken.svg';
@@ -5,17 +8,42 @@ import MaskedInput from 'react-maskedinput';
 
 const Table = () => {
 
+    const [index, setIndex] = useState(1);
+    const [table, setTable] = useState(1);
+
+    const setFinishedIndex = (i) => {
+        setIndex(i)
+    }
+
+    const next = () => {
+        if (index < table - 1) setIndex(index + 1)
+    }
+
+    const previous = () => {
+        if (index > 0) setIndex(index - 1)
+    }
 
     const CreateTable = (rows = 7, cols = 6) => {
         const cells = rows * cols;
 
-        const table = [];
+        const tableArr = [];
         for (let i = 0; i < cells; i++){
-            table.push(<MaskedInput key={`tableCell${i}`} mask={i > 5 ? "11,1\ см." : "11.11.1111"} className="table__table-item" placeholder=''/>);
+            tableArr.push(<MaskedInput key={`tableCell${i}`} mask={i > 5 ? "11,1\ см." : "11.11.1111"} className="table__table-item" placeholder=''/>);
         }
 
-        return table;
+        const tablesArr = [];
+        for (let i = 0; i < table; i++){
+            tablesArr.push(
+                <div key={i+42} className="table__table-grid">
+                    {tableArr.map(item => item)}
+                </div>
+            );
+        }
+
+        return tablesArr;
     }
+
+    
 
     return (
         <>
@@ -24,7 +52,8 @@ const Table = () => {
                     <div className="table__supper-container">
                         <div className="table__title">Статистика изменений</div>
                         <a href="#" className="table__pdf">Скачать трекер <img src={download} alt="Download" /></a>
-                    </div>    
+                    </div> 
+                    <button onClick={() => setTable(table => ++table)}>Click me</button>   
                     <div className="table__table-container">
                         <div className="table__descr-grid">
                             <div className="table__descr-item">Дата</div>
@@ -35,9 +64,13 @@ const Table = () => {
                             <div className="table__descr-item">ОН</div>
                             <div className="table__descr-item">ОР</div>
                         </div>
-                        <div className="table__table-grid">
-                            {CreateTable().map(item => item)}   
-                        </div>
+                        <Carousel 
+                            itemsToShow={1}
+                            renderPagination={({activePage}) => {
+                                return <div className='table__pagination'>{activePage + 1}</div>
+                            }}>
+                            {CreateTable().map(item => item)}
+                        </Carousel>
                     </div>
                     <div className="table__subber-container">
                         <div className="table__item">

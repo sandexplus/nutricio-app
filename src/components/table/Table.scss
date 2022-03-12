@@ -55,7 +55,7 @@
     &__table-grid {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-rows: repeat(7, 80px);
         grid-auto-rows: auto;
         row-gap: 20px;
         column-gap: 20px;
@@ -68,11 +68,14 @@
         line-height: 35px;
         color: #434242;
         max-width: 200px;
-        [data-bt="1"]{
-            background-color: red;
-        }
     }
-
+    &__pagination{
+        position: absolute;
+        top: 60%;
+        font-size: 40px;
+        color: #434242;
+        font-weight: 500;
+    }
 
 
     &__subber-container{
@@ -92,4 +95,18 @@
     &__img{
         margin-right: 100px;
     }
+}
+
+.rec.rec-arrow{
+    position: absolute;
+    top: 60%;
+}
+
+
+.rec.rec-arrow-right{
+    right: 40%;
+}
+
+.rec.rec-arrow-left{
+    left: 50%;
 }

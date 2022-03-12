@@ -1,0 +1,21 @@
+.trainer {
+    padding-top: 55px;
+    &__btns-container{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__switch-train{
+        padding: 15px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: .5s all;
+        background-color: #fff;
+        border: 2px solid #000;
+        font-family: 'Montserrat', sans-serif;
+        &:hover{
+            transform: scale(110%);
+        }
+    }
+}
