@@ -1,0 +1,43 @@
+.login-menu{
+    padding: 150px 0;
+    &__title{
+        text-align: center;
+        margin-top: 150px;
+        font-size: 50px;
+    }
+    &__back{
+        margin-left: 50px;
+        text-decoration: none;
+        color: #000;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__login{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding: 25px 30px;
+        text-align: center;
+        font-size: 23px;
+        border: 2px solid #000;
+        margin-top: 30px;
+    }
+    &__b{
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__btn{
+        display: inline-block;
+        padding: 25px 30px;
+        font-size: 23px;
+        text-decoration: none;
+        text-align: center;
+        border: 2px solid #000;
+        border-radius: 25px;
+        color: #000;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

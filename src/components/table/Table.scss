@@ -40,8 +40,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, 1fr);
         grid-auto-rows: auto;
-        row-gap: 20px;
-        margin-right: 20px;
     }
     &__descr-item{
         padding: 10px 23px;
@@ -57,17 +55,32 @@
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(7, 80px);
         grid-auto-rows: auto;
-        row-gap: 20px;
-        column-gap: 20px;
     }
     &__table-item {
-        border: 1px solid #000;
+        border-right: 1px solid #434242;
+        border-top: 1px solid #434242;
         padding: 10px 23px;
         font-weight: 400;
         font-size: 30px;
         line-height: 35px;
         color: #434242;
         max-width: 200px;
+        &:nth-child(6n + 1){
+            border-left: none;
+        }
+        &:nth-child(6n){
+            border-right: none;
+        }
+        @for $var from 1 to 7 {
+            &:nth-child(#{$var}){
+                border-top: none;
+            }
+        }
+        @for $var from 37 to 43 {
+            &:nth-child(#{$var}){
+                border-bottom: none;
+            }
+        }
     }
     &__pagination{
         position: absolute;
@@ -75,6 +88,7 @@
         font-size: 40px;
         color: #434242;
         font-weight: 500;
+        left: 52%;
     }
 
 
@@ -108,5 +122,5 @@
 }
 
 .rec.rec-arrow-left{
-    left: 50%;
+    left: 45%;
 }
