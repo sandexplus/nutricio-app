@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nutricio-app/static/css/main.327482b5.css",
-    "main.js": "/nutricio-app/static/js/main.c8e824cc.js",
+    "main.js": "/nutricio-app/static/js/main.d214e3bb.js",
     "static/media/background.png": "/nutricio-app/static/media/background.e851705502c3b5982610.png",
     "static/media/about_girl.jpg": "/nutricio-app/static/media/about_girl.89b8fcbf284e27c4855e.jpg",
     "static/media/menu-img3.jpg": "/nutricio-app/static/media/menu-img3.7f281f1462d09f0abe81.jpg",
@@ -27,10 +27,10 @@
     "static/media/left-arrow.svg": "/nutricio-app/static/media/left-arrow.93ca51693021735be4cdabe322aae4b7.svg",
     "static/media/file_download.svg": "/nutricio-app/static/media/file_download.210e8c781ea9bbc134b9b724f7e65c53.svg",
     "main.327482b5.css.map": "/nutricio-app/static/css/main.327482b5.css.map",
-    "main.c8e824cc.js.map": "/nutricio-app/static/js/main.c8e824cc.js.map"
+    "main.d214e3bb.js.map": "/nutricio-app/static/js/main.d214e3bb.js.map"
   },
   "entrypoints": [
     "static/css/main.327482b5.css",
-    "static/js/main.c8e824cc.js"
+    "static/js/main.d214e3bb.js"
   ]
 }
