@@ -36,6 +36,11 @@
             right: 250px;
         }
     }
+    &__flex-item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 
     &__base-data{
         margin-top: 100px;

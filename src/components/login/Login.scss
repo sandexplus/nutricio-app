@@ -252,3 +252,52 @@
         filter: invert(100);
     }
 }
+
+
+.swiper-button-prev {
+    color: #2E3A59;
+}
+.swiper-button-next {
+    color: #2E3A59;
+}
+.swiper-container {
+    width: 100%;
+    height: 400px;
+}
+.swiper-slide{
+    width: 100%;
+}
+.review {
+    padding-top: 110px;
+    padding-bottom: 117px;
+    &__slider {
+        margin-top: 67px;
+        text-align: center;
+    }
+}
+
+.footer {
+    padding: 50px 0;
+    background-color: #EEE7DF;
+    text-align: center;
+    &__links {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+    }
+    &__link-img {
+        filter: invert(100%);
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        &:hover{ 
+            filter: none;
+        }
+    }
+    &__logo {
+        margin-top: 21px;
+    }
+    &__credentials {
+        margin-top: 37px;
+    }
+}

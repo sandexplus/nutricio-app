@@ -1,0 +1,14 @@
+.title {
+    //margin-top: 110px;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 85px;
+    color: rgba(113, 63, 16, 0.7);
+    text-align: center;
+}
+.title-back {
+    position: absolute;
+    top: -103px;
+    left: 50%;
+    transform: translateX(-50%);
+}

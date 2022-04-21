@@ -21,28 +21,24 @@ const App = () => {
     const { get, post, response, loading, error } = useFetch(_URL)
 
     const getDB = async () => {
-        const initialDB = await get('/users');
+        const initialDB = await get('/data');
         if (response.ok) setUsers(initialDB);
     }
 
     useEffect(() => {
         getDB();
-        console.log(users);
+        //console.log(users);
     }, [])
 
     return (
         <>
-                {loading && 'Loading...'}
-            {users.map(todo => (
-                <div key={todo.id}>{todo.title}</div>
-            ))}
-                    <Router>
+            <Router>
                 <Routes>
-                    <Route path="/" element={<Login/>}/>
+                    <Route path="/" element={<Login users={users.length ? users : null}/>}/>
                     <Route path="/login" element={<LoginMenu/>} users={users}/>
                     <Route path="/admin" element={<Admin/>}/>
                     <Route path="/links" element={<LoggedMenu/>}/>
-                    <Route path="/table" element={<LoggedTable/>}/>
+                    <Route path="/table" element={<LoggedTable users={users}/>}/>
                     <Route path="/methodic" element={<LoggedMethodic/>}/>
                     <Route path="/trainers" element={<LoggedTrainer/>}/>
                 </Routes>

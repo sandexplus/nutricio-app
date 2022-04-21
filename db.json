@@ -1,7 +1,35 @@
 {
-    "users": [
+  "data": [
+    {
+      "login": "lolka",
+      "name": "Диана",
+      "role": "admin",
+      "trains": [
         {
-            "login": "lolka"
+          "title": "123",
+          "count": "4",
+          "descr": "kjhgj`",
+          "img": "iuhu"
+        },
+        {
+          "title": "dfgd",
+          "count": "dfggh",
+          "descr": "dfghdfgh",
+          "img": "dgh"
         }
-    ]
+      ],
+      "table": [
+        [
+          "11.11.2011",
+          "22",
+          "13",
+          "2314",
+          "43",
+          "54",
+          "666"
+        ]
+      ],
+      "id": 1
+    }
+  ]
 }

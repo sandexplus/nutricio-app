@@ -42,7 +42,10 @@
     ]
   },
   "devDependencies": {
+    "axios": "^0.26.1",
     "gh-pages": "^3.2.3",
-    "react-router-hash-link": "^2.4.3"
+    "react-router-hash-link": "^2.4.3",
+    "swiper": "^8.0.7",
+    "validator": "^13.7.0"
   }
 }

@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import {useEffect} from 'react';
+import { LoginTitle } from '../loginTitle/LoginTitle';
+import { Navigation } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 import './Login.scss';
 import instagram from '../../assets/img/instagram.svg'
@@ -8,12 +14,19 @@ import telegram from '../../assets/img/telegram.svg'
 import aboutTitle from '../../assets/img/about.png';
 import aboutGirl from '../../assets/img/about_girl.jpg';
 import rateTitle from '../../assets/img/rate.png';
+import reviewTitle from '../../assets/img/review.png';
+
+import reviewImg1 from '../../assets/img/review1.jpg' 
+import reviewImg2 from '../../assets/img/review2.jpg' 
+import reviewImg3 from '../../assets/img/review3.jpg' 
+
+import logo from '../../assets/img/logo.png';
 
 const Login = (props) => {
 
     useEffect(() => {
         console.log(props.users);
-    }, [])
+    }, [props.users])
     
     return (
         <>
@@ -25,7 +38,7 @@ const Login = (props) => {
                         <a href="#rate" className="login__anchor">Тарифы</a>
                         <a href="#review" className="login__anchor">Отзывы</a>
                     </nav>
-                    <Link to="/login" className="login__login">Войти</Link>
+                    <Link to={localStorage.getItem('You.Course__login') ? '/links' : "/login"} className="login__login">Войти</Link>
                 </div> 
                 <div className="login__links-container">
                     <a href='#' className="login__link">
@@ -61,8 +74,7 @@ const Login = (props) => {
         </section>
         <section className="rate">
             <div className="container">
-                <img src={rateTitle} alt="Тарифы" className="rate__title-back"></img>
-                <h2 className="rate__title">Тарифы</h2>
+                {LoginTitle(rateTitle, 'Тарифы')}
                 <div className="rate__container">
                     <div className="rate__item">
                         <div className="rate__data-container">
@@ -145,6 +157,45 @@ const Login = (props) => {
                 </div>
             </div>
         </section>
+        <section className="review">
+            <div className="container">
+                {LoginTitle(reviewTitle, 'Отзывы')}
+                <Swiper
+                modules={[Navigation]}
+                spaceBetween={0}
+                slidesPerView={3}
+                /* width={'80%'} */
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+                navigation
+                centeredSlides={true}
+                loop={true}
+                allowTouchMove={false}
+                className='review__slider'
+                >
+                    <SwiperSlide><img src={reviewImg1} alt="Отзыв" className="review__img" /></SwiperSlide>
+                    <SwiperSlide><img src={reviewImg2} alt="Отзыв" className="review__img" /></SwiperSlide>
+                    <SwiperSlide><img src={reviewImg3} alt="Отзыв" className="review__img" /></SwiperSlide>
+                    
+                </Swiper>
+            </div>
+        </section>
+        <footer className='footer'>
+            <div className="container">
+                <div className="footer__inner">
+                    <div className="footer__links">
+                        <div className="footer__link">
+                            <img src={telegram} alt="Telegram" className="footer__link-img" />
+                        </div>
+                        <div className="footer__link">
+                            <img src={instagram} alt="Instagram" className="footer__link-img" />
+                        </div>
+                    </div>
+                    <img src={logo} alt="Logo" className="footer__logo" />
+                    <div className="footer__credentials">&copy; {new Date().getFullYear()} You.Course</div>
+                </div>
+            </div>
+        </footer>
         </>
     )
 }
