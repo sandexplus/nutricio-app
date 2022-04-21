@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/nutricio-app/static/css/main.c1ef97bb.css",
-    "main.js": "/nutricio-app/static/js/main.0496d0fd.js",
+    "main.css": "/nutricio-app/static/css/main.327482b5.css",
+    "main.js": "/nutricio-app/static/js/main.c8e824cc.js",
     "static/media/background.png": "/nutricio-app/static/media/background.e851705502c3b5982610.png",
+    "static/media/about_girl.jpg": "/nutricio-app/static/media/about_girl.89b8fcbf284e27c4855e.jpg",
     "static/media/menu-img3.jpg": "/nutricio-app/static/media/menu-img3.7f281f1462d09f0abe81.jpg",
     "static/media/menu-img2.jpg": "/nutricio-app/static/media/menu-img2.023e566bd61d56480110.jpg",
     "static/media/menu-img1.jpg": "/nutricio-app/static/media/menu-img1.25f2c538fb1daeeb976b.jpg",
     "static/media/methodic_girl2.jpg": "/nutricio-app/static/media/methodic_girl2.8fcb1b956e3ad22d9724.jpg",
+    "static/media/review2.jpg": "/nutricio-app/static/media/review2.dc0ab5adcc3ab7a1d825.jpg",
+    "static/media/review1.jpg": "/nutricio-app/static/media/review1.9e3e663a943389b68d86.jpg",
+    "static/media/review3.jpg": "/nutricio-app/static/media/review3.17ce49ec5e0f14c8b157.jpg",
     "static/media/maneken.svg": "/nutricio-app/static/media/maneken.7ecb9c9f259f994b5659c8238d399141.svg",
     "static/media/methodic_girl1.jpg": "/nutricio-app/static/media/methodic_girl1.086ea9770cde5f9be400.jpg",
     "static/media/methodic_milk.svg": "/nutricio-app/static/media/methodic_milk.bf09fbd983a2caf6e6a0b803b8870dd7.svg",
     "static/media/methodic__fitness.svg": "/nutricio-app/static/media/methodic__fitness.8ec0c6f35c4df5307f8bb6dd70ce8445.svg",
+    "static/media/about.png": "/nutricio-app/static/media/about.9ce203c6b80708f98b55.png",
     "static/media/methodic__head.svg": "/nutricio-app/static/media/methodic__head.c3778fe3869931fb7ffaff8cbf475d9b.svg",
+    "static/media/review.png": "/nutricio-app/static/media/review.5d0ad7b316648ea308ba.png",
+    "static/media/rate.png": "/nutricio-app/static/media/rate.5d3a4ca2477b10930efc.png",
     "static/media/methodic__gel.svg": "/nutricio-app/static/media/methodic__gel.826e2215c748983eb88028e1cadb899c.svg",
     "static/media/telegram.svg": "/nutricio-app/static/media/telegram.223636c6eb1e02f60aff15a83fd70a9c.svg",
     "static/media/instagram.svg": "/nutricio-app/static/media/instagram.0c2b7de7aa201ae74cffadf0f8ec0a2e.svg",
@@ -19,11 +26,11 @@
     "static/media/user-logo.svg": "/nutricio-app/static/media/user-logo.584d45a4f4ba22680124f42715049fbd.svg",
     "static/media/left-arrow.svg": "/nutricio-app/static/media/left-arrow.93ca51693021735be4cdabe322aae4b7.svg",
     "static/media/file_download.svg": "/nutricio-app/static/media/file_download.210e8c781ea9bbc134b9b724f7e65c53.svg",
-    "main.c1ef97bb.css.map": "/nutricio-app/static/css/main.c1ef97bb.css.map",
-    "main.0496d0fd.js.map": "/nutricio-app/static/js/main.0496d0fd.js.map"
+    "main.327482b5.css.map": "/nutricio-app/static/css/main.327482b5.css.map",
+    "main.c8e824cc.js.map": "/nutricio-app/static/js/main.c8e824cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1ef97bb.css",
-    "static/js/main.0496d0fd.js"
+    "static/css/main.327482b5.css",
+    "static/js/main.c8e824cc.js"
   ]
 }
